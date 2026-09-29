@@ -93,6 +93,10 @@ h2{font-size:38px;font-weight:800;letter-spacing:-.03em;line-height:1.15;margin:
 .step h3{font-size:19px;font-weight:800;margin:0 0 8px;line-height:1.3}
 .step p{font-size:15.5px;color:var(--body);margin:0;line-height:1.55}
 .step .note{font-size:14px;color:var(--mute);margin-top:9px}
+.howto{margin:14px 0 4px}
+.howto a{display:block;background:var(--orange);color:#fff;border-radius:9px;
+ padding:9px 13px;margin-bottom:7px;font-size:14px;font-weight:800;text-decoration:none}
+.howto a:hover{background:var(--ink)}
 
 /* ---------- the split panel ---------- */
 .split{display:-webkit-box;display:flex;border-radius:18px;overflow:hidden;margin:0}
@@ -107,14 +111,15 @@ h2{font-size:38px;font-weight:800;letter-spacing:-.03em;line-height:1.15;margin:
 
 /* ---------- price ---------- */
 .price{background:var(--white);border:1px solid var(--stone);border-radius:18px;
- padding:36px 40px;display:-webkit-box;display:flex;gap:44px;align-items:center;
- flex-wrap:wrap}
-.price__n{flex:0 0 auto}
+ padding:36px 40px;display:-webkit-box;display:flex;align-items:center;flex-wrap:wrap}
+.price__n{flex:0 0 auto;margin-right:46px;padding-right:46px;
+ border-right:1px solid var(--stone)}
+.price__n + .price__n{border-right:1px solid var(--stone)}
 .price__n span{display:block;font-size:14px;font-weight:800;letter-spacing:.06em;
  text-transform:uppercase;color:var(--mute);margin-bottom:2px}
 .price__n b{display:block;font-size:56px;font-weight:800;letter-spacing:-.03em;line-height:1;
  color:var(--orange)}
-.price__c{flex:1 1 320px;font-size:16.5px;color:var(--body);line-height:1.6}
+.price__c{flex:1 1 300px;font-size:16.5px;color:var(--body);line-height:1.6;margin:0}
 .price__c b{color:var(--ink)}
 
 /* ---------- reviews ---------- */
@@ -234,9 +239,13 @@ footer{background:var(--ink);color:#fff;padding:56px 0 30px;margin-top:20px}
     <div class="step">
       <div class="step__n">1</div>
       <h3>Add it to your checkout</h3>
-      <p>A delivery option in settings you already own. Shopify, WooCommerce, Wix, Squarespace or
-      a site somebody built you.</p>
-      <p class="note">Three minutes, once.</p>
+      <p>A delivery option in settings you already own. Three minutes, once.</p>
+      <div class="howto">
+        <a href="/setup">How to do it in Shopify &rarr;</a>
+        <a href="/setup-woo">How to do it in WooCommerce &rarr;</a>
+      </div>
+      <p class="note">On Wix, Squarespace or a site somebody built you? Ring us and we will do it
+      with you.</p>
     </div>
     <div class="step">
       <div class="step__n">2</div>
@@ -275,14 +284,16 @@ footer{background:var(--ink);color:#fff;padding:56px 0 30px;margin-top:20px}
 
 <section class="sec sec--tint" id="price"><div class="wrap">
   <h2>What it costs</h2>
-  <p class="lede">You set what the customer pays. We charge you ours, and you keep the difference.</p>
+  <p class="lede">Two prices, and you set what the customer pays. You keep the difference either way.</p>
   <div class="price">
-    <div class="price__n"><span>We charge you from</span><b>&euro;9.95</b></div>
-    <p class="price__c">Per delivery, plus VAT, whatever is in the bag. Sandyford, Tallaght,
-    D&uacute;n Laoghaire and Swords cost a little more, and we will confirm your rates when we
-    speak. <b>Most shops charge one price at the checkout whatever the address</b> &mdash; usually
-    around &euro;14.99 &mdash; so same-day is a line they earn on rather than a cost they absorb.
-    Billed monthly on what actually went, and nothing at all in a month where you send nothing.</p>
+    <div class="price__n"><span>Most of Dublin</span><b>&euro;9.95</b></div>
+    <div class="price__n"><span>Four areas further out</span><b>&euro;12.95</b></div>
+    <p class="price__c">Two prices, plus VAT, whatever is in the bag. <b>&euro;12.95</b> covers
+    Sandyford, Tallaght, D&uacute;n Laoghaire and Swords; everywhere else we go is
+    <b>&euro;9.95</b>. <b>Most shops charge one price at the checkout whatever the address</b>
+    &mdash; usually around &euro;14.99 &mdash; so same-day is a line they earn on rather than a
+    cost they absorb. Billed monthly on what actually went, and nothing at all in a month where
+    you send nothing.</p>
   </div>
 </div></section>
 
@@ -319,10 +330,14 @@ footer{background:var(--ink);color:#fff;padding:56px 0 30px;margin-top:20px}
     <p>Not an app, not a crowd, not a startup. hop is a new name on a service this city has been
     using for a long time &mdash; which means when something goes wrong, your customer is dealing
     with people who answer the phone.</p>
+    <p><b>Rated 4.8 on Trustpilot</b> &mdash; the highest of any courier service in Ireland
+    &mdash; and more than 11,000 reviews across our own bookings.
+    <a href="https://ie.trustpilot.com/review/cyclone.ie" rel="noopener" target="_blank"
+    style="color:var(--orange);font-weight:800">Read them yourself &rarr;</a></p>
   </div>
   <div class="prov__f">
     <div class="fact"><b>38</b><span>years delivering in Dublin</span></div>
-    <div class="fact"><b>11,000</b><span>reviews, not testimonials we wrote</span></div>
+    <div class="fact"><b>4.8</b><span>on Trustpilot, the highest rated courier in Ireland</span></div>
     <div class="fact"><b>ISO</b><span>9001 and 14001, through the NSAI</span></div>
     <div class="fact"><b>Ours</b><span>employed riders, not a gig fleet</span></div>
   </div>
